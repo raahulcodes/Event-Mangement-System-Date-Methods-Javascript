@@ -50,3 +50,10 @@ Event.prototype.date_Info = function()
 
 console.log(event.date_Info());
 
+// modifying the event's date etc
+setEventTime.setFullYear(2027, 1, 3);
+setEventTime.setHours(12, 30, 0, 44);
+
+let event_Update = new Event("Michael Jackson USA Tour", setEventTime.toLocaleDateString(), setEventTime.toLocaleTimeString("en-US"));
+console.log(event_Update.display());
+
