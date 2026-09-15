@@ -31,6 +31,7 @@ let eventTime = setEventTime.toLocaleTimeString("en-US");
 let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday' , 'Friday', 'Saturday'];
 
 let event = new Event("Michael Jackson USA Tour", eventDate, eventTime);
+console.log("----Details of the Event-------");
 console.log(event.display());
 
 // retrieving date information
@@ -55,5 +56,6 @@ setEventTime.setFullYear(2027, 1, 3);
 setEventTime.setHours(12, 30, 0, 44);
 
 let event_Update = new Event("Michael Jackson USA Tour", setEventTime.toLocaleDateString(), setEventTime.toLocaleTimeString("en-US"));
+console.log("----Updated Details of the Event-------");
 console.log(event_Update.display());
 
